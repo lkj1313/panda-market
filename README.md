@@ -1,1 +1,1 @@
-https://frabjous-palmier-b2136e.netlify.app/
+https://frabjous-palmier-b2136e.netlify.app

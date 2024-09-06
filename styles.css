@@ -7,6 +7,7 @@ body {
   word-break: keep-all;
   font-family: "Pretendard", sans-serif;
   overflow-x: hidden;
+  width: 1920px;
 }
 
 /* header */
@@ -17,27 +18,39 @@ header {
   width: 100%;
   height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 200px;
   background-color: #ffffff;
   border-bottom: 1px solid #dfdfdf;
-}
-
-.logo-button {
-  margin-left: 200px;
-}
-.login-button {
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 8px;
-  padding: 11.5px 23px;
-  background-color: #3692ff;
-  color: #ffffff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 200px;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1120px;
+  }
+  .logo-button {
+    width: 153px;
+    height: 51px;
+  }
+  .login-button {
+    width: 128px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 23px 12px;
+    gap: 10px;
+    background-color: #3692ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  span {
+    font: Pretendard;
+    font-weight: 600;
+    size: 16px;
+    line-height: 26px;
+    color: #f3f4f6;
+  }
 }
 
 /* main */
@@ -46,27 +59,42 @@ main {
   margin-top: 70px;
 }
 
-.banner {
-  background-image: url("./image/hero-image.png");
+.first-section {
   background-color: #cfe5ff;
+  width: 1920px;
   height: 540px;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   background-repeat: no-repeat;
   background-position: 80% bottom;
   background-size: 55%;
-}
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  .wrapper {
+    display: flex;
 
-  gap: 20px;
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  height: 340px;
+    align-items: center;
+
+    width: 1110px;
+    height: 340px;
+    gap: 7px;
+  }
+  .sightseeing-box {
+    width: 357px;
+    height: 260px;
+    padding: 0 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .pandaImg-box {
+    width: 746px;
+    height: 340px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .button {
@@ -101,63 +129,78 @@ h1 {
   letter-spacing: 0.02em;
 }
 
-/* middle-section */
-.middle-section {
-  max-width: 1200px;
+/* second-section */
+.second-section {
+  width: 1920px;
+  height: 2160px;
   margin: 0 auto;
   padding-bottom: 138px;
+  .feature {
+    width: 1920px;
+    height: 720px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  .feature-divBox {
+    width: 988px;
+    height: 444px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    border-radius: 12px 0px 0px 0px;
+  }
+  .feature-imgBox {
+    width: 579px;
+    height: 444px;
+
+    img {
+      width: 579px;
+      height: 444px;
+    }
+  }
+  .feature-contentBox {
+    width: 298px;
+    height: 238px;
+    padding: 0px 24px 0px 0px;
+    .feature-tag {
+      /* Hot item */
+
+      height: 26px;
+
+      /* pretendard/2lg-18px-bold */
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      /* identical to box height, or 144% */
+      display: flex;
+      align-items: center;
+
+      /* Primary/100 */
+      color: #3692ff;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+    div {
+      width: 298px;
+      height: 238px;
+      padding: 0px 24px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
 }
-.feature {
-  padding-top: 138px;
-  display: flex;
-  align-items: center;
-  gap: 5%;
-}
-.feature > img {
-  width: 50%;
-}
-.feature-content {
-  /* Frame 2609390 */
 
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px 24px 0px 0px;
-  gap: 12px;
-
-  margin: 0 auto;
-  width: 298px;
-  height: 238px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-.feature-tag {
-  /* Hot item */
-
-  height: 26px;
-
-  /* pretendard/2lg-18px-bold */
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  /* identical to box height, or 144% */
-  display: flex;
-  align-items: center;
-
-  /* Primary/100 */
-  color: #3692ff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
 .feature-description {
   font-size: 24px;
   font-weight: 500;
@@ -165,27 +208,6 @@ h1 {
   letter-spacing: 0.08em;
   margin-top: 24px;
   white-space: nowrap;
-}
-
-.feature-content2 {
-  /* img/landing/desktop_03 */ /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  gap: 64px;
-
-  background: #fcfcfc;
-  border-radius: 12px;
-}
-.feature-description2 {
-  flex: 1;
-  text-align: right;
-}
-.feature-tag2 {
-  text-align: right;
-  color: #3692ff;
 }
 
 footer {
@@ -211,9 +233,6 @@ a {
 
 svg {
   cursor: pointer;
-}
-#bottomBanner {
-  background-image: url("https://fe-sprint-mission-2.vercel.app/images/home/bottom-banner-image.png");
 }
 
 #socialMedia {
