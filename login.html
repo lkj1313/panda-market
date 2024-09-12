@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./css/userAuth.css" />
   </head>
+
   <body>
-    login
+    <div class="container">
+      <header class="header-box">
+        <div class="market-logo" alt="marketLogo">
+          <a href="/index.html"><img src="./image/market-logo.png" /></a>
+        </div>
+        <div clss="market-font">
+          <a href="/index.html"><img src="./image/market-font.png" /></a>
+        </div>
+      </header>
+
+      <main class="main-box">
+        <section class="email-login-section">
+          <form class="email-login-section-form">
+            <div class="form-group">
+              <label class="font-label" for="email-input">이메일</label>
+              <input
+                id="email-input"
+                type="email"
+                class="form-group-input"
+                placeholder="이메일을 입력해주세요"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password-input">비밀번호</label>
+              <input
+                id="password-input"
+                type="password"
+                class="form-group-input"
+                placeholder="비밀번호를 입력해주세요"
+              />
+            </div>
+
+            <button class="btn-login" type="submit">로그인</button>
+          </form>
+        </section>
+
+        <div class="social-login-section"></div>
+      </main>
+      <footer class="footer-box"></footer>
+    </div>
   </body>
 </html>
