@@ -25,14 +25,14 @@ body {
 }
 .container {
   width: 640px;
-  height: 100%;
-  margin: 0 auto;
+  height: 842px;
 
   gap: 40px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 
 .header-container {
