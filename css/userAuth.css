@@ -29,13 +29,13 @@ body {
   margin: auto;
 
   gap: 40px;
-  border: 1px solid black;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.header-box {
+.header-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,9 +43,12 @@ body {
   height: 132px;
   width: 396px;
 }
-.main-box {
-  justify-content: center;
+.main-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .email-login-section {
@@ -89,4 +92,23 @@ body {
 
 .social-login-section {
   height: 74px;
+  width: 640px;
+  padding: 16px 23px 16px 23px;
+  background-color: #e6f2ff;
+}
+.social-login-container {
+  display: flex;
+  justify-content: space-between;
+  height: 42px;
+  align-items: center;
+}
+
+.social-login-options {
+  width: 100px;
+  height: 42px;
+  display: flex;
+  gap: 16px;
+}
+.footer-signup-link {
+  color: var(--blue);
 }
