@@ -25,8 +25,8 @@ body {
 }
 .container {
   width: 640px;
-  height: 618px;
-  margin: auto;
+  height: 100%;
+  margin: 0 auto;
 
   gap: 40px;
 
@@ -52,12 +52,12 @@ body {
 }
 
 .email-login-section {
-  height: 300px;
+  height: 524px;
   width: 640px;
 }
 .email-login-section-form {
   display: flex;
-  height: 300px;
+  height: 524px;
   flex-direction: column;
   gap: 24px;
 }
@@ -71,6 +71,7 @@ body {
   height: 56px;
   padding: 16px 24px 16px 24px;
   border: none;
+  background: #f3f4f6;
 }
 .font-label {
   font-size: 18px;
